@@ -1,0 +1,201 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/*Default Elements*/
+
+html {
+    /*Typography*/
+    font-size: 16px;
+}
+
+body {
+    /*Layout*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*Design*/
+    background-color: #181a1b;
+    /*Typography*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+      
+}
+
+h1 {
+    /*Typography*/
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000000;    
+}
+
+h2 {
+    /*Layout*/
+    margin-bottom: 1rem;
+    /*Typography*/
+    text-shadow: 1px 1px 1px #000000;
+}
+
+h3 {
+    /*Layout*/
+    margin-bottom: 1rem;
+    /*Typography*/
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+form {
+    /*Layout*/
+    max-height: 100%;
+}
+
+label {
+    /*Layout*/
+    margin-bottom: 5px;
+}
+
+input {
+    /*Layout*/
+    width: 50%;
+}
+
+input, select{
+    /*Layout*/
+    padding: 6px;
+    /*Design*/
+    border-radius: 5px;
+    border: 2px solid #1E6FC5;
+}
+
+button {
+    /*Layout*/
+    width: 100%;
+    padding: 1rem;
+    /*Design*/
+    border-radius: 10px;
+    border: 2px solid #000000;
+    background-color: #3e90e8;
+    /*Typography*/
+    font-size: .8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+button:hover {
+    /*Design*/
+    background-color: #3e90e8b8;
+}
+
+/*Modified Elements*/
+
+#container-calc {
+    /*Layout*/
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 20px; 
+    /*Design*/
+    border-radius: 5px; 
+    box-shadow: 1px 1px 20px #000000;
+}
+
+#container-card {
+    /*Layout*/
+    display: none;
+    width: 35vw;
+    height: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 20px; 
+    /*Design*/
+    border-radius: 5px; 
+    box-shadow: 1px 1px 20px #000000;
+    /*Typography*/
+    text-align: center;
+}
+
+.checkbox-area {
+    /*Layout*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.input-area, .select-area {
+    /*Layout*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    /*Layout*/
+    display: block;
+    margin-bottom: 1rem;
+    padding: 10px;
+    /*Design*/
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #000000;
+    /*Typography*/
+    font-size: 1rem;    
+}
+
+.row-card {
+    /*Layout*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.checkbox-area label {
+    /*Layout*/
+    margin: 0px;
+    /*Typography*/
+    font-size: .9rem;
+}
+
+.checkbox-area input {
+    /*Layout*/
+    margin-right: 5px;
+    margin-left: 3px;
+}
+
+.main-text {
+    /*Typography*/
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.secondary-text {
+    /*Layout*/
+    margin-top: 3px;
+    /*Typography*/
+    font-size: .8rem;
+}
+
+.row-card p{
+    /*Layout*/
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+/*Responsiveness*/
+
+@media screen and (max-width: 768px) {
+    #calc, #container-card {
+        /*Layout*/
+        width: 85%;
+    }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Nutrição</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="container-calc">
+        <h1>Calculadora de Nutrição</h1>
+
+        <form >
+            <div class="input-area">
+                <label for="people-weight">Peso</label>
+                <input type="number" id="people-weight" class="input" step="0.01" required placeholder="Em quilogramas (kg)">
+            </div>
+
+            <div class="input-area">
+                <label for="people-height">Altura</label>
+                <input type="number" id="people-height" class="input" step="0.01" required placeholder="Em metros (m)">
+            </div>
+
+            <div class="input-area">
+                <label for="people-age">Idade</label>
+                <input type="number" id="people-age" class="input" required placeholder="Em anos">
+            </div>
+
+            <div class="select-area">
+                <label for="sex-option">Sexo</label>
+                <select id="sex-option" class="input">
+                    <option value="masc">Masculino</option>
+                    <option value="fem">Feminino</option>
+                </select>
+            </div>
+
+            <div class="select-area">
+                <label for="activity-level-option">Nível de Atividade</label>
+                <select id="activity-level-option" class="input">
+                    <option value="act-l1">Sedentário</option>
+                    <option value="act-l2">Levemente ativo</option>
+                    <option value="act-l3">Moderadamente ativo</option>
+                    <option value="act-l4">Muito ativo</option>
+                    <option value="act-l5">Extremamente ativo</option>
+                </select>
+            </div>
+
+            <div class="select-area">
+                <label for="diet-type-option">Tipo de Dieta</label>
+                <select id="diet-type-option" class="input">
+                    <option value="def">Deficit</option>
+                    <option value="sup">Superavit</option>
+                </select>
+                <input id="diet-type-range" class="input" type="range" min="1" max="1000">
+                <p id="diet-type-range-text" class="text-range"></p>
+            </div>
+
+            <div class="input-area">
+                <label>Macronutrientes</label>
+
+                <input id="protein-range" class="input" type="range" min="0.1" max="20" step="0.1">
+                <p>Proteína: <span id="protein-range-text" class="text-range">0</span>g/kg</p>
+
+                <input id="fat-range" class="input" type="range" min="0.1" max="20" step="0.1">
+                <p>Gordura: <span id="fat-range-text" class="text-range">0</span>g/kg</p>
+
+                <input id="carbohydrate-range" class="input" type="range" min="0.1" max="20" step="0.1">
+                <p>Carboidrato: <span id="carbohydrate-range-text" class="text-range">0</span>g/kg</p>
+            </div>
+            
+            <div class="checkbox-area">
+                <label for="basal-metabolic-rate-checkbox">TMB</label>
+                <input id="basal-metabolic-rate-checkbox" class="checkbox" type="checkbox" checked>
+                
+                <label for="total-energy-expenditure-checkbox">GET</label>
+                <input id="total-energy-expenditure-checkbox" class="checkbox" type="checkbox" checked>
+                
+                <label for="diet-type-checkbox">TD</label>
+                <input id="diet-type-checkbox" class="checkbox" type="checkbox" checked>
+                
+                <label for="body-mass-index-checkbox">IMC</label>
+                <input id="body-mass-index-checkbox" class="checkbox" type="checkbox" checked>
+                
+                <label for="ideal-weight-checkbox">FP</label>
+                <input id="ideal-weight-range-checkbox" class="checkbox" type="checkbox" checked>
+                
+                <label for="macronutrients-checkbox">MN</label>
+                <input id="macronutrients-checkbox" class="checkbox" type="checkbox" checked>
+                
+                <label for="amount-of-water-checkbox">QA</label>
+                <input id="amount-of-water-checkbox" class="checkbox" type="checkbox" checked>
+            </div> 
+            
+            <button id="calc-button" type="button">CALCULAR</button>
+        </form>
+
+       
+    </div>
+
+    <div id="container-card">
+        <h2>Resultado</h2>
+
+        <div id="basal-metabolic-rate-card" class="card">
+            <h3>Taxa Metabólica Basal</h3>
+            <p id="basal-metabolic-rate-main-text" class="main-text text-card"> 0 kcal</p>
+        </div>
+
+        <div id="total-energy-expenditure-card" class="card">
+            <h3>Gasto Energético Total</h3>
+            <p id="total-energy-expenditure-main-text" class="main-text text-card"> 0 kcal</p>
+            <p id="total-energy-expenditure-secondary-text" class="secondary-text">Com base no nível de atividade</p>
+        </div>
+
+        <div id="diet-type-card" class="card">
+            <h3 id="diet-type-title" class="text-card"></h3>
+            <p id="diet-type-main-text" class="main-text text-card"></p>
+        </div>
+
+        <div id="body-mass-index-card" class="card">
+            <h3>Índice de Massa Corporal</h3>
+            <p id="body-mass-index-main-text" class="main-text text-card">0 kg/m</p>
+            <p id="body-mass-index-secondary-text" class="secondary-text text-card"></p>
+        </div>
+
+        <div id="ideal-weight-range-card" class="card">
+            <h3>Faixa de Peso Ideal</h3>
+            <p id="ideal-weights-main-text" class="main-text text-card"></p>
+        </div>
+
+        <div id="macronutrients-card" class="card">
+            <h3>Macronutrientes</h3>
+            <div class="row-card">
+                <div>
+                    <p id="protein-main-text" class="main-text text-card"></p>
+                    <p class="secondary-text">Proteína</p>
+                </div>
+                <div>
+                    <p id="fat-main-text" class="main-text text-card"></p>
+                    <p class="secondary-text">Gordura</p>
+                </div>
+                <div>
+                    <p id="carbohydrate-main-text" class="main-text text-card"></p>
+                    <p class="secondary-text">Carboidrato</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="amount-of-water-card" class="card">
+            <h3>Quantidade de Água</h3>
+            <p id="amount-water-main-text" class="main-text text-card"></p>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
