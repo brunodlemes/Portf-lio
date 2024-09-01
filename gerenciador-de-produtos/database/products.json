@@ -1,0 +1,57 @@
+[
+  {
+    "id": "P1",
+    "name": "Adega",
+    "description": "Estrutura de madeira e ferro com rodinhas de silicone. Serve para exibir/armazenar bebidas.",
+    "price": 1290,
+    "dimensions": "80cm x 40cm x 100cm",
+    "origin": "Fabricado no Brasil",
+    "care_tips": "Limpar com pano seco e evitar exposição direta ao sol.",
+    "complementary_product_tips": "Combine com taças e garrafas para uma apresentação completa.",
+    "additional_information": "A estrutura é feita com madeira de alta qualidade e ferro resistente, ideal para suportar o peso das bebidas."
+  },
+  {
+    "id": "P2",
+    "name": "Namoradeira",
+    "description": "Banco de madeira com dois lugares e encosto com ladrilhos.",
+    "price": 1390,
+    "dimensions": "1,20m x 52cm x 88,6cm",
+    "origin": "Fabricado no Brasil",
+    "care_tips": "Limpar com pano úmido e secar imediatamente. Evitar produtos químicos abrasivos.",
+    "complementary_product_tips": "Combine com almofadas decorativas para maior conforto e estilo.",
+    "additional_information": "O encosto com ladrilhos adiciona um toque rústico e elegante ao ambiente."
+  },
+  {
+    "id": "P3",
+    "name": "Mesa Oito Lugares",
+    "description": "Mesa de madeira com 8 lugares disponíveis.",
+    "price": 2980,
+    "dimensions": "1,795m x 82cm x 80,1cm",
+    "origin": "Fabricado no Brasil",
+    "care_tips": "Limpar com pano seco. Evitar líquidos em excesso e exposição direta ao sol.",
+    "complementary_product_tips": "Combine com cadeiras de madeira ou estofadas para completar o conjunto.",
+    "additional_information": "Ideal para grandes refeições e eventos familiares."
+  },
+  {
+    "id": "P4",
+    "name": "Cadeira Pesada",
+    "description": "Cadeira de madeira mais maciça.",
+    "price": 420,
+    "dimensions": "42,4cm x 45,5cm x 1,3m",
+    "origin": "Fabricado no Brasil",
+    "care_tips": "Limpar com pano seco e evitar exposição a umidade.",
+    "complementary_product_tips": "Combine com mesas de madeira para uma harmonização completa.",
+    "additional_information": "A largura é da ponta da cadeira. A cadeira é ideal para suportar mais peso e uso prolongado."
+  },
+  {
+    "id": "P5",
+    "name": "Mesa Dez Lugares",
+    "description": "Mesa de madeira com 10 lugares disponíveis.",
+    "price": 3200,
+    "dimensions": "2,2m x 90,4cm x 80cm",
+    "origin": "Fabricado no Brasil",
+    "care_tips": "Limpar com pano seco. Evitar produtos químicos fortes e exposição direta ao sol.",
+    "complementary_product_tips": "Combine com cadeiras elegantes e toalhas de mesa para uma apresentação sofisticada.",
+    "additional_information": "Espaçosa e ideal para grandes reuniões e jantares."
+  }
+]
