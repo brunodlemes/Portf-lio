@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Lemes - Portfólio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="images/professional-portfolio.png" type="image/x-icon">
+     <!-- Pré-conexão com o servidor de fontes do Google para melhorar o desempenho -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link para o estilo da fonte Poppins do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
+    <!-- Link para o estilo dos ícones da Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <!-- Logo da página com um link para a âncora no topo da página -->
+        <a href="#" id="logo">Bruno <span>Lemes</span></a>
+
+         <!-- Navegação principal com links para as seções da página -->
+        <nav>
+            <a href="#about-me-section">Sobre Mim</a>
+            <a href="#education-section">Educação</a>
+            <a href="#projects-section">Projetos</a>
+            <a href="#contact-section" id="contactLink">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção principal de introdução com um texto e uma imagem de perfil -->
+        <section id="home-content">
+                <div id="home-text">
+                    <h1>Oi, Aqui é o <span>Bruno</span></h1>
+                    <h2>Aspirante à desenvolvedor de software</h2>
+                </div>
+
+                <div id="profile-pic">
+                    <img src="images/profile-pic.png" alt="Imagem de perfil de Bruno Lemes">
+                </div>
+        </section>
+
+        <!-- Seção com uma breve descrição pessoal -->
+        <section id="about-me-section">
+            <h3 class="subtitle">Sobre Mim</h3>
+            <p>Entusiasta por tecnologia, gosto de criar projetos e experimentar recursos. Atualmente, estou estudando para me tornar um desenvolvedor de software, mas tenho planos de me aventurar na criação de conteúdo. Também tenho o desejo de criar o meu próprio empreendimento em T.I.</p>
+        </section>
+
+        <!-- Seção de educação com informações sobre a formação acadêmica e idiomas -->
+        <section id="education-section">
+            <h3 class="subtitle">Educação</h3>
+
+            <p>Formação</p>
+            <ul>
+                <li>Ensino Superior</li>
+                <p>Análise e Desenvolvimento de Software - Centro Universitário Uninter</p>
+                <li>Ensino Médio</li>
+                <p>E.E Aurelina Ferreira</p>
+            </ul>
+
+            <p>Idiomas</p>
+            <ul>
+                <li>Inglês</li>
+                <p>Básico</p>
+                <li>Português</li>
+                <p>Fluente</p>
+            </ul>
+        </section>
+
+        <!-- Seção de projetos com links para os projetos realizados -->
+        <section id="projects-section">
+            <h3 class="subtitle">Projetos</h3>
+            <div id="projects-div">
+                <a href="https://brunodlemes.github.io/Portfolio/calculadora-nutricao/" target="_blank">
+                    <div id="project1">
+                        <h4>Calculadora de Nutrição</h4>
+                        <p>Calculadora para realizar diversos cálculos nutricionais, como índice de massa corporal, macronutrientes, taxa metabólica basal, entre outros.</p>
+                    </div>
+                </a>
+                <a href="https://brunodlemes.github.io/Portfolio/gerenciador-de-produtos/index.html" target="_blank">
+                    <div id="project2">
+                        <h4>Gerenciador de Produtos</h4>
+                        <p>Um simples sistema de catálogo de produtos baseado em JSON.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção de contato com um formulário para enviar mensagens -->
+        <section id="contact-section">
+            <h3 class="subtitle">Contato</h3>
+            <div id="contact-div">
+                <form action="#" id="form">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required>
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" rows="5" cols="30" required></textarea>
+                    <button id="submit" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé com um link para o perfil do GitHub -->
+    <footer>
+        <a href="https://github.com/brunodlemes" target="_blank"><i class='bx bxl-github'></i></a>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

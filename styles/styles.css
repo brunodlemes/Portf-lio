@@ -1,0 +1,271 @@
+/* ==============================
+   Configurações Gerais
+   ============================== */
+
+/* Redefine o estilo padrão e define estilos gerais para todos os elementos */
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Variáveis de cores para facilitar manutenção e consistência */
+:root {
+    --main-color: #4C89F8;
+    --text-color: #fff;
+    --button-hover: #2b73f8;
+    --bg-color: #151616;
+    --second-bg-color: #191B1C;
+}
+
+/* Define o tamanho da fonte base e estilo geral do corpo */
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+/* ==============================
+   Layout e Design do Header
+   ============================== */
+
+/* Estilo geral do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+}
+
+/* Estilo geral do logo */
+#logo {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 800;
+    transition: 0.3s ease;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+#logo span {
+    color: var(--main-color);
+    text-shadow: var(--main-color) 0 0 25px;
+}
+
+/* Estilo geral dos links de navegação no cabeçalho */
+nav a {
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover, nav a.clicked {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+/* ==============================
+   Layout e Design do Main
+   ============================== */
+
+/* Estilo geral das seções */
+section {
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+
+section p {
+    margin-left: 5px;
+    text-indent: 5px;
+}
+
+.subtitle {
+    border-bottom: 2px solid var(--main-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Estilo geral da seção inicial */
+#home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    text-align: left;
+}
+
+#home-text h1 {
+    font-size: 2.5rem;
+}
+
+#home-text h2 {
+    font-size: 1rem;
+}
+
+#home-text span {
+    color: var(--main-color);
+}
+
+#profile-pic {
+    border-radius: 50%;
+}
+
+#profile-pic img {
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.4s ease-in-out;
+}
+
+#profile-pic img:hover {
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
+}
+
+/* Estilo geral da seção sobre mim */
+#about-me-section {
+    background-color: var(--second-bg-color);
+}
+
+/* Estilo geral da seção de educação */
+#education-section ul {
+    margin-left: 2rem;
+    padding: 0.5rem;
+}
+
+#education-section ul p {
+    color: var(--main-color);
+    font-weight: 400;
+    text-shadow: 1px 1px 2px var(--second-bg-color);
+}
+
+/* Estilo geral da seção de projetos */
+#projects-section {
+    background-color: var(--second-bg-color);
+}
+
+#projects-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#projects-div h4 {
+    font-size: 1.5rem;
+}
+
+#projects-div p {
+    color: var(--second-bg-color);
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-indent: 0;
+}
+
+#project1, #project2 {
+    width: 380px;
+    height: 150px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--main-color);
+    background-color: var(--text-color);
+    transition: 0.4s ease-in-out;
+}
+
+#project1:hover, #project2:hover {
+    color: var(--text-color);
+    background-color: var(--main-color);
+    transform: scale(1.1);
+}
+
+/* Estilo geral da seção de contato */
+#contact-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1rem;
+    background-color: var(--second-bg-color);
+    border-radius: 5px;
+}
+
+label {
+    color: var(--main-color);
+    margin-bottom: 0.3rem;
+}
+
+input {
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    padding: 0.2rem;
+}
+
+textarea {
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    resize: none;
+}
+
+button {
+    width: 20%;
+    margin-top: 1rem;
+    padding: 0.3rem 0;
+    border-radius: 0.5rem;
+    color: var(--main-color);
+    background-color: var(--text-color);
+    border: 0.1rem solid var(--main-color);
+    transition: 0.4s ease;
+}
+
+button:hover {
+    color: var(--text-color);
+    background-color: var(--main-color);
+    transform: scale(1.1);
+}
+
+/* ==============================
+   Layout e Design do Footer
+   ============================== */
+
+/* Estilo geral do rodapé */
+footer {
+    padding: 50px;
+    background-color: var(--second-bg-color);
+    text-align: center;
+}
+
+footer i {
+    color: var(--main-color);
+    font-size: 2rem;
+    transform: scale(1.1);
+}
